@@ -90,8 +90,8 @@ header {
   align-items: center;
 }
 .flexContainer {
-  width: 1240px;
-  height: 57px;
+  width: 1220px;
+  height: 93px;
   margin: 0 auto;
   display:flex;
   justify-content: space-between;
@@ -131,13 +131,15 @@ header {
   margin: 0 .5em;
   opacity: 0.25;
 }
+ul > li:nth-child(1) > a {
+
+}
 
 .register {
-  padding: .7em 1.3em;
+  padding: .6em 1.1em;
   border-radius: 1.5em;
   background-color: #CC3333;
   margin: .5em;
-  letter-spacing: .05em;
 }
 
 
