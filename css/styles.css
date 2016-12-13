@@ -58,7 +58,8 @@ table {
 }
 /* For testing only */
 
-/*:not(body):not(html) {
+/*
+:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #FFF;
 }*/
@@ -87,23 +88,17 @@ body {
   font-weight: 300;
   letter-spacing: .01em;
 }
-.flexMain {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 
 /*BEGIN NAV*/
 header {
-  width: 100vw;
   height: 93px;
   background-color: #262626;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .flexNavWrap {
-  width: 1220px;
+  width: 80vw;
   height: 93px;
   margin: 0 auto;
   display:flex;
@@ -112,14 +107,15 @@ header {
 }
 .logo {
   display: flex;
-  align-self: center;
 }
 .logo img {
-  align-self: center;
-  width: 70%;
+  width: 306px;
 }
 #logo {
+  width: 306px;
   opacity: 1.0;
+  align-self: center;
+  margin: 0;
 }
 .flexNavWrap ul {
   font-size: .85em;
@@ -153,16 +149,26 @@ header {
 /*BEGIN ALBUM MAIN CONTENT*/
 
 .flexAlbumWrap {
-  width: 1220px;
+  width: 80vw;
   margin: 0 auto;
   display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.albumRow {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
 }
-
-.albumRow {
-  display: flex;
-  flex-direction: column;
+.album {
+  width: 100%;
+  height: 100%;
+  margin: 0 1em 1em 0;
 }
+.albumRow > img:last-child {
+  margin-right: 0;
+}
+
 
 
 
